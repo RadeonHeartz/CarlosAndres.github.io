@@ -1,0 +1,96 @@
+:root{
+    --bg-primary: #e4a4a477;
+    --ft-primary: clamp(18px, 8vw, 36px);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    height: 60px;
+}
+main{
+    height: calc(100vh - 60px);
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    overflow: hidden;
+}
+html{
+    min-height: 200vw;
+}
+.info{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    /*Al utilizar column se invierte cómo se alinean los elementos */
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    padding: 16px;
+}
+.info .welcome{
+    color: #800a1e;
+    width: fit-content;
+    font-size: 2vw;
+}
+.imagen{
+    width: 50%;
+}
+.info h1{
+    font-size: 5w;
+}
+.info h1 span{
+    display: block;
+    color: palevioletred;
+}
+.info .tag_role{
+    background-color: rgba(255,178,204,0.562);
+    color: rgb(128,10,30);
+    width: fit-content;
+    font-weight: 600;
+    padding: 6px 10px;
+    border-radius: 16px;
+
+}
+.info .action{
+    display: flex;
+    justify-content: center;
+}
+.info .quote{
+    font-size : 2vw;
+}
+.info button{
+    padding: 6px 12px;
+    border-radius: 16px;
+    background: #800a1e;
+    color: white;
+    width: fit-content;
+    font-size: 26px
+}
+.blurppoint{
+    position: fixed;
+    top: 10%;
+    right: calc(50% + 25px);
+    background: red;
+    width: 50px;
+    height: 6px;
+    z-index: 100;
+    filter: blur(50px);
+
+}
+main::after{
+    content: '';
+    position: absolute;
+    top: 4%;
+    left: 65%;
+    background: red;
+    width: 120px;
+    height: 120px;
+    z-index: 100;
+    filter: blur(100px);
+    z-index: -1;
+}
