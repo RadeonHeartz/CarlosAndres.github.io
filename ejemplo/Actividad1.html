@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='es'>
+
+<head>
+    <title>Inscripción a equipo | 8vo ciclo sistemas</title>
+    <style>
+        :root{
+            --black-bg: #000;
+            --white-cl: #fff
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        main {
+            background: black;
+            color: white;
+        }
+
+        form {
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <main id="main" class="formulario">
+        <h1>Inscripción a equipo 02-2026</h1>
+        <form autocomplete="off">
+            <div>
+                <label for="studenID">Carné de estudiante</label>
+                <input type="text" id="studentId" required />
+            </div>
+            <div>
+                <label for="studentName">Nombre de estudiante</label>
+                <input type="text" id="studentName" required />
+            </div>
+            <div>
+                <label for="studentAge">Año de nacimiento</label>
+                <input type="date" id="studentAge" required min="2010-07-23" max="2026-07-23" />
+            </div>
+            <div>
+                <label for="selectedTeamId">Seleccione el equipo</label>
+                <select id="selectedTeamId">
+                    <option value="1">FC Barcelona</option>
+                    <option value="2">Real Madrid</option>
+                </select>
+            </div>
+            <div>
+                <label for="studentEmail">Correo del estudiante</label>
+                <input type="email" id="studentEmail" required />
+            </div>
+            <input type="submit" value="Enviar"/>
+    </main>
+</body>
+
+</html>
