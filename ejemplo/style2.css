@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    background-color: red;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+header{
+    background: white;
+    position: static;
+    width: 90%;
+    top: 2%;
+    left: 5%;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+section{
+    height: 200vh;
+}
+.superposicion{
+
+}

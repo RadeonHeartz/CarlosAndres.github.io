@@ -1,3 +1,4 @@
+//Código reutilizado de la página web "https://codepen.io/luis-developer/pen/QWazOjz"
 function createSquare() {
     const section = document.querySelector('.stars');
     const square = document.createElement('span');
