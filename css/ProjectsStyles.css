@@ -1,0 +1,146 @@
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #eafdfc;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 70px;
+    overflow: hidden;
+}
+.Carrousel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+}
+.Atras, .Adelante{
+    cursor: pointer;
+}
+.Imagenes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+
+}
+.Img{
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 576px;
+    width: 1134px;
+    border-radius: 15px;
+    margin: 5px;
+    object-fit: cover;
+    filter: saturate(175%);
+}
+.Texto{
+    overflow: hidden;
+    position: absolute;
+    flex-direction: column;
+    transform: translateY(0px);
+    margin-bottom: 9px;
+    backdrop-filter: blur(20px);
+    background-color: rgba(63,106,138,0.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+.Texto h3{
+    text-shadow: 0px 0px 15px black;
+    padding-top: 40px;
+    color: white;
+    font-weight: 300;
+    font-size: 27px;
+}
+.Texto p{
+    align-items: center;
+    padding: 20px;
+    color: white;
+    font-size: 0px;
+    font-weight: 300;
+}
+.Imagenes .Texto{
+    width: 600px;
+    height: 100px;
+    transition: 1s;
+}
+.Imagenes:hover .Texto{
+    transition: height 1s, transform 1s, background-color 1s;
+    transform: translateY(-150px);
+    height: 300px;
+    background-color: rgba(63, 106, 138, 0.71);
+}
+.Imagenes:hover .Texto p{
+    transition: font-size 0s .2s linear;
+    font-size: 23px;
+    font-weight: 300;
+    text-shadow: 0px 0px 10px #000;
+}
+.Puntos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Puntos p{
+    font-size: 100px;
+    font-weight: 500;
+    margin-top: -50px;
+    color: black;
+}
+.Puntos .Bold{
+    font-weight: 700;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #5e17eb;
+
+}
+header
+nav {
+    margin-right: 0;
+    display: flex;
+    justify-content: flex-end;
+    height: 10%;
+}
+
+nav ul {
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    list-style: none;
+    gap: 7%;
+
+}
+
+nav section {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+nav section span {
+    position: absolute;
+    display: block;
+    background: white;
+    border-radius: 50%;
+}
+
+li {
+    Color: black;
+    padding: 0.7em 1.4em;
+    border: 2px solid white;
+    border-radius: 16px;
+    text-align: center;
+    font-size: 1.1em;
+}

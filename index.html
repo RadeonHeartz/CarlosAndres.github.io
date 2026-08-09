@@ -2,26 +2,27 @@
 
 <head>
     <!--Esto es un comentario-->
-    <link rel="stylesheet" href="css/estilos.css" />
+    <link rel="stylesheet" href="css/IndexStyles.css" />
     <meta name="description" content="Estudiante de ingenieria en sistemas de 8 semestre" />
     <meta property="og.type" content="website" />
     <meta property="og.locale" content="es_GT" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>inicio | Carlos AL</title>
 
     <script></script>
 </head>
 
 <body>
-    <main class="Hero-section">
+    <main class="HeroSection">
         <div class="stars"></div>
         <header>
-
             <nav>
-                <ul>
+                <img class="MenuToggle" src="Imagenes/BurgerMeny.jpg" alt="Menu de navegación" />
+                <ul class="NavLinks">
                     <a href="#" title="Inicio">
                         <li>Inicio</li>
                     </a>
-                    <a href="#" title="Mis Proyectos">
+                    <a href="#Proyectos" title="Mis Proyectos">
                         <li>Proyectos</li>
                     </a>
                     <a href="#" title="Contactame">
@@ -34,27 +35,37 @@
             <p class="Welcome">Bienvenido a mi Portafolio</p>
             <h1 class="CatchPhrase">A paso lento pero seguro</h1>
             <h1 class="CatchPhrase">voy construyendo mi camino hacia el exito.</h1>
+            <div class="Imagen">
+                <img src="Imagenes/PFPTemp.jpg" alt="Foto de perfil" width="20%" height="20%" />
+            </div>
+            <p class="AboutMe">Estudiante de ingeniería en sistemas de 8° semestre, perseverante y con ganas de seguir
+                aprendiendo.
+                Con conocimientos en programación, desarrollo web y bases de datos.
+                Dispuesto a aceptar nuevos desafios y a seguir creciendo profesionalmente en el mundo de la tecnología.
+            </p>
+
         </div>
+
     </main>
-    <section class="Projects">
+    <section class="Projects" id="Proyectos">
         <h1>Mis Proyectos</h1>
-        <div class="Project-Container">
-            <a href="#" title="Compilador">
-                <div class="Project-Card">
+        <div class="ProjectContainer">
+            <a href="sitios/Compilador.html" title="Compilador">
+                <div class="ProjectCard">
                     <img src="Imagenes/Compilador.png" alt="Imagen de proyecto" width="80%" height="80%" />
                     <h2>Compilador</h2>
                     <p>Compilador casero</p>
                 </div>
             </a>
-            <a href="#" title="Panasonic">
-                <div class="Project-Card">
+            <a href="" title="Panasonic">
+                <div class="ProjectCard">
                     <img src="Imagenes/Panasonic.jpeg" alt="Imagen de proyecto" width="80%" height="80%" />
                     <h2>Panasonic</h2>
                     <p>Sistema de Tienda departamental</p>
                 </div>
             </a>
-            <a href="#" title="Cinema Royale">
-                <div class="Project-Card">
+            <a href="Sitios/CinemaRoyale.html" title="Cinema Royale">
+                <div class="ProjectCard">
                     <img src="Imagenes/Cinema_Royale.png" alt="Imagen de proyecto" width="80%" height="80%" />
                     <h2>Cinema Royale</h2>
                     <p>Sistema de gestión de taquilla de cine</p>
@@ -63,7 +74,7 @@
         </div>
     </section>
 
-    <script src="Functions.js"></script>
+    <script src="JavaScript/Functions.js"></script>
     <!--<script>
         console.log("Hola Mundo");
     </script>*/-->
