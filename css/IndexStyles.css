@@ -76,7 +76,7 @@ a{
 }
 
 .Projects {
-    height: 100%;
+    height: auto;
     position: relative;
     overflow: hidden;
     background-color: black;
@@ -161,22 +161,28 @@ li {
 .ProjectContainer {
     align-content: center;
     display: flex;
-    margin-left: 5%;
-    gap: 10%;
+    flex-direction: column;
+    gap: 10px;
     padding: 10% 10% 10% 10%;
+
 }
 
 .ProjectCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
     background: #1b1b1b;
     border-radius: 12px;
     padding: 5%;
-    width: 100%;
+    width: auto;
+    height: auto;
     text-align: center;
+    gap: 10px;
 }
 
 .ProjectCard img {
     width: 100%;
-    height: 160px;
+    height: 100%;
     object-fit: cover;
     border-radius: 8px;
 }
@@ -193,10 +199,32 @@ li {
 
 .ProjectContainer a {
     color: white;
-    flex: 1;
-    max-width: 300px;
+    width: auto;
 }
-
+.ImageLeft{
+    grid-column: 1;
+    grid-row: 1/3;
+}
+.HeaderRight{
+    grid-column: 2;
+    grid-row: 1;
+}
+.DescriptionRight{
+    grid-column: 2;
+    grid-row: 2;
+}
+.ImageRight{
+    grid-column: 2;
+    grid-row: 1/3;
+}
+.HeaderLeft{
+    grid-column: 1;
+    grid-row: 1;
+}
+.DescriptionLeft{
+    grid-column: 1;
+    grid-row: 2;
+}
 
 @keyframes stars {
     0% {

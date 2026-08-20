@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <!--Esto es un comentario-->
@@ -7,6 +8,8 @@
     <meta property="og.type" content="website" />
     <meta property="og.locale" content="es_GT" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio de Carlos Andres Arriaza">
+    <meta charset="UTF-8">
     <title>inicio | Carlos AL</title>
 
     <script></script>
@@ -17,7 +20,8 @@
         <div class="stars"></div>
         <header>
             <nav>
-                <a href="https://github.com/RadeonHeartz/CarlosAndres.github.io">
+                <a href="https://github.com/RadeonHeartz/CarlosAndres.github.io"
+                    aria-label="Ir al repositorio de GitHub">
                     <img class="Icon" src="Imagenes/github_dark.svg" alt="Enlace a repositorio de GitHub">
                 </a>
                 <img class="MenuToggle" src="Imagenes/BurgerMeny.jpg" alt="Menu de navegación" />
@@ -53,25 +57,42 @@
     <section class="Projects" id="Proyectos">
         <h1>Mis Proyectos</h1>
         <div class="ProjectContainer">
-            <a href="Sitios/Compilador.html" title="Compilador">
+            <a href="Sitios/Compilador.html" title="Proyecto Compilador">
                 <div class="ProjectCard">
-                    <img src="Imagenes/Compilador.png" alt="Imagen de proyecto" width="80%" height="80%" />
-                    <h2>Compilador</h2>
-                    <p>Compilador casero</p>
+                    <img class="ImageLeft" src="Imagenes/Compilador.png" alt="Proyecto Compilador" width="80%"
+                        height="80%" />
+                    <h2 class="HeaderRight">Compilador</h2>
+                    <p class="DescriptionRight">Compilador realizado en Java, contiene analizador léxico, analizador
+                        sintáctico, muestra el código máquina generado al usuario
+                        y si se han realizado optimizaciones de código.
+                    </p>
                 </div>
             </a>
-            <a href="" title="Panasonic">
+            <a href="#" title="Proyecto Panasonic">
                 <div class="ProjectCard">
-                    <img src="Imagenes/Panasonic.jpeg" alt="Imagen de proyecto" width="80%" height="80%" />
-                    <h2>Panasonic</h2>
-                    <p>Sistema de Tienda departamental</p>
+                    <img class="ImageRight" src="Imagenes/Panasonic.jpeg" alt="Proyecto Panasonic" width="80%"
+                        height="80%" />
+                    <h2 class="HeaderLeft">Panasonic</h2>
+                    <p class="DescriptionLeft">Sistema de Tienda departamental, lleva control de todos los productos,
+                        empleados, ventas, compras y promociones
+                        el sistema está conectado a una base de datos completamente normalizada y estandarizada. Durante
+                        su creación se aplicaron conocimientos
+                        de programación en Java y Creación y diseño de base de datos en SQLServer.
+                    </p>
                 </div>
             </a>
-            <a href="Sitios/CinemaRoyale.html" title="Cinema Royale">
+            <a href="Sitios/CinemaRoyale.html" title="Proyecto Cinema Royale">
                 <div class="ProjectCard">
-                    <img src="Imagenes/Cinema_Royale.png" alt="Imagen de proyecto" width="80%" height="80%" />
-                    <h2>Cinema Royale</h2>
-                    <p>Sistema de gestión de taquilla de cine</p>
+                    <img class="ImageLeft" src="Imagenes/Cinema_Royale.png" alt="Proyecto Cinema Royale" width="80%"
+                        height="100%" />
+                    <h2 class="HeaderRight">Cinema Royale</h2>
+                    <p class="DescriptionRight">Sistema de gestión de taquilla de cine realizado en C# con Windows
+                        Forms, el sistema es capaz de mostrar al usuario
+                        la cartelera completa con las funciones en proyección, el usuario puede reservar asientos para
+                        una función específica e imprimir el boleto.
+                        El proyecto cuenta con una base de datos robusta y segura, interfaz amigable para el cliente y
+                        un tiempo de respuesta aceptable.
+                    </p>
                 </div>
             </a>
         </div>

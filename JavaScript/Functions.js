@@ -11,8 +11,12 @@ function createSquare() {
     square.style.left = Math.random() * innerWidth + 'px';
 
     section.appendChild(square);
+    square.addEventListener("animationend", () => {
+        section.removeChild(square);
+    });
 
 }
+
 setInterval(createSquare, 50);
 
 const menuToggle = document.querySelector(".MenuToggle");
